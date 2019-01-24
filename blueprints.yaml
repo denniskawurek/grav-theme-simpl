@@ -1,0 +1,27 @@
+name: Simpl
+version: 1.0.0
+description: Simple theme which concentrates mainly on your content.
+icon: rebel
+author:
+  name: denniskawurek
+  email: kontakt@dkwr.de
+homepage: https://github.com/denniskawurek/grav-theme-simpl
+demo: https://dkwr.de/articles
+keywords: grav, theme, etc
+bugs: https://github.com/denniskawurek/grav-theme-simpl/issues
+readme: https://github.com/denniskawurek/grav-theme-simpl/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool

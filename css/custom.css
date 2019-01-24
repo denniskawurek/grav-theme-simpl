@@ -1,0 +1,219 @@
+/* Core Stuff */
+
+@font-face {
+    font-family: 'Inconsolata Bold';
+    src: url(../fonts/Inconsolata-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inconsolata Regular';
+    src: url(../fonts/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather Bold';
+    src: url(../fonts/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Inconsolata Regular';
+    line-height: 1.7;
+    color: #192231;
+    background: #FCFBFB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather Bold';
+    color: #192231;
+}
+
+h1 {
+    font-size: 6.5rem;
+}
+
+a {
+    color: #E85A4F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E98074;
+}
+
+pre {
+    background: #F0F0F0;
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+blockquote {
+    border-left: 10px solid #eee;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+li {
+    margin-bottom: 0rem;
+}
+
+td {
+    padding: 10px;
+}
+
+video {
+    width: 100%!important;
+}
+
+/* Utility Classes */
+.wrapper {
+    margin: 0 3rem;
+}
+
+.padding {
+    padding: 3rem 1rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Content Styling */
+.header .padding {
+    padding: 1rem 0;
+}
+
+
+.header .logo {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: #eee;
+}
+
+/* Menu Settings */
+.main-nav ul {
+    text-align: center;
+    letter-spacing: -1em;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+.main-nav ul li a {
+    position: relative;
+    display: block;
+    line-height: 45px;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.main-nav > ul > li > a {
+    border-radius: 2px;
+}
+
+/* Selected Dropdown nav item */
+.main-nav ul li.selected > a {
+    background-color: #fff;
+}
+
+/* Dropdown CSS */
+.main-nav ul li {position: relative;}
+
+.main-nav ul li ul {
+    position: absolute;
+    min-width: 100%;
+    text-align: left;
+    z-index: 999;
+    display: none;
+}
+.main-nav ul li ul li {
+    display: block;
+}
+
+/* Dropdown CSS */
+.main-nav ul li ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/* Active on Hover */
+.main-nav li:hover > ul {
+    display: block;
+}
+
+/* Child Indicator */
+.main-nav .has-children > a {
+    padding-right: 30px;
+}
+
+.main-nav .has-children > a:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    position: absolute;
+    display: inline-block;
+    right: 8px;
+    top: 0;
+}
+
+.main-nav .has-children .has-children > a:after {
+    content: '\f105';
+}
+
+p>code {
+    font-size: inherit;
+}
+
+pre>code {
+    font-size: 0.8em;
+}
+
+.page-content img {
+    max-width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Table of contents */
+.headeranchor-link::before, .headeranchor-link-left::before {
+   padding-right: 0em!important;
+}
