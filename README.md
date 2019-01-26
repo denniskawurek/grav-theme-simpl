@@ -5,19 +5,11 @@ The **Simpl** Theme is for [Grav CMS](http://github.com/getgrav/grav).
 [![Screenshot of Simpl](screenshot.png)](screenshot.png)
 
 ## Install
-### Install via CLI GPM
-Navigate in the CLI to the root of your grav installation.
-Install the devtools:
+### Install manually
 
-```$ bin/gpm install devtools```
-
-Install the theme:
-```$ bin/gpm install simpl```
-
-### Install via Admin Plugin
-Login and navigate to the Plugins sections.
-Click the Add button in the top right.
-Find DevTools and click the install button.
+Download the [latest release](https://github.com/denniskawurek/grav-theme-simpl/releases/latest).
+Unzip it in your `user/themes` folder and rename the folder to `simpl`.
+Login to Grav and activate the theme in your `Themes` section.
 
 ## Description
 
